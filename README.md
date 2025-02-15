@@ -65,6 +65,9 @@ To deploy the project to GitHub Pages:
 
 You can use the following sample data to test the functionality:
 
+![image](https://github.com/user-attachments/assets/3b73c6f6-23a7-450c-8a07-1c01f13e0d25)
+
+
 ```json
 {
   "full_name": "John Doe",
