@@ -1,86 +1,100 @@
-Simple Patient Registration System
-This is a simple patient registration system built with React (Vite + TypeScript) and Supabase for authentication and data storage. The system allows users to register, log in, and access a dashboard to manage patient records.
-Features
-User Authentication (Signup and Login)
-Dashboard for managing patient records
-Responsive design with Tailwind CSS
-Hosted on GitHub Pages
-Tech Stack
-Frontend: React, Vite, TypeScript, Tailwind CSS
-Backend: Supabase (for authentication and database)
-Deployment: GitHub Pages
-Installation and Setup
-Prerequisites
-Node.js and npm installed on your machine
-Supabase account for backend setup
-Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/foomz/patient-registration.git
-cd patient-registration
-Install Dependencies
-bash
-Copy
-Edit
-npm install
-Environment Variables
-Create a .env file in the root directory and add your Supabase configuration:
-ini
-Copy
-Edit
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-Run the Application Locally
-bash
-Copy
-Edit
-npm run dev
-Open your browser and go to http://localhost:5173.
-Build and Deploy
-To build and deploy the application to GitHub Pages:
-bash
-Copy
-Edit
-npm run build
-npm run deploy
-Usage
-Navigate to /signup to create a new account.
-Navigate to /login to access your dashboard.
-The dashboard allows you to manage patient records easily.
-Sample Test Data
-To test the system, use the following:
-Test Email: test@example.com
-Test Password: password123
-Project Structure
-css
-Copy
-Edit
-src/
-├── components/
-│   ├── Dashboard.tsx
-│   ├── Login.tsx
-│   └── Signup.tsx
-├── App.tsx
-└── main.tsx
-Coding Best Practices
-Clean and maintainable code with TypeScript
-Organized folder structure for scalability
-Consistent use of React hooks and state management
-Written Assessment
-1. Approach to Implementing Features
-I began by setting up the React application using Vite for a faster development experience. I used React Router for navigation and integrated Supabase for authentication and database management. Tailwind CSS was chosen for a responsive UI design.
-2. Challenges Encountered and Solutions
-One challenge was deploying the app to GitHub Pages. The routing issue was resolved by switching from BrowserRouter to HashRouter. Another challenge was configuring environment variables securely, which was addressed using .env files.
-3. Frameworks, Tools, and Technologies
-Vite for fast development and optimized builds
-React Router for navigation
-Supabase for backend services (authentication and database)
-Tailwind CSS for responsive UI design
-4. Data Privacy and Compliance
-User authentication data is securely managed using Supabase, which complies with modern security standards. Environment variables are used to protect sensitive information.
-5. Future Enhancements
-Adding more robust form validations for better user experience.
-Implementing role-based access control for enhanced security.
-Integrating data analytics for patient records.
-Improving UI/UX design with animations and advanced styling.
+# Patient Registration System
+
+This project is a React-based patient registration system designed to manage patient information securely. It leverages Supabase for backend services, including authentication and database operations. The system is built with modern web development tools and follows best practices to ensure a robust and maintainable codebase.
+
+
+## Features
+
+User Authentication: Allows users to sign up and log in securely.
+Patient Registration and Management: Users can register new patients, update existing patient information, and manage patient records.
+Form Validation: Ensures that all required fields are filled out correctly.
+Responsive Design: Utilizes Tailwind CSS to ensure the application is responsive and works well on various devices.
+Toast Notifications: Provides feedback to users with success and error messages using React Hot Toast.
+
+
+## Setup and Usage
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Supabase Account
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/<your-username>/patient-registration.git
+    cd patient-registration
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Create a [.env](http://_vscodecontentref_/1) file in the root directory and add your Supabase credentials:
+    ```env
+    VITE_SUPABASE_URL=your-supabase-url
+    VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+    ```
+
+4. Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+5. Open your browser and navigate to `http://localhost:3000`.
+
+### Deployment
+
+To deploy the project to GitHub Pages:
+
+1. Build the project:
+    ```bash
+    npm run build
+    ```
+
+2. Deploy to GitHub Pages:
+    ```bash
+    npm run deploy
+    ```
+
+3. Enable GitHub Pages in your repository settings, selecting the `gh-pages` branch as the source.
+
+## Sample Test Data
+
+You can use the following sample data to test the functionality:
+
+```json
+{
+  "full_name": "John Doe",
+  "date_of_birth": "1990-01-01",
+  "gender": "male",
+  "contact_number": "1234567890",
+  "email": "john.doe@example.com",
+  "medical_history": "No significant medical history.",
+  "allergies": "None",
+  "current_medications": "None",
+  "address_line1": "123 Main St",
+  "address_line2": "Apt 4B",
+  "city": "Anytown",
+  "state": "Anystate",
+  "zip_code": "12345",
+  "consent_given": true
+}
+
+##Technologies Used
+React: For building the user interface.
+Supabase: For backend services including authentication and database operations.
+Tailwind CSS: For styling the components.
+React Hot Toast: For displaying toast notifications.
+Vite: For fast development and build tooling.
+TypeScript: For type checking and improved developer experience.
+
+
+##Future Enhancements
+Implement role-based access control to restrict access to certain features based on user roles.
+Add more detailed patient records and history.
+Integrate with external APIs for additional functionalities.
+Improve form validation and error handling.
+Enhance the UI/UX with more interactive elements.
