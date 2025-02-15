@@ -61,11 +61,12 @@ To deploy the project to GitHub Pages:
 
 3. Enable GitHub Pages in your repository settings, selecting the `gh-pages` branch as the source.
 
-## Sample Test Data
+## Supabase Database Schema Visualizer
 
 You can use the following sample data to test the functionality:
 
-![image](https://github.com/user-attachments/assets/3b73c6f6-23a7-450c-8a07-1c01f13e0d25)
+![image](https://github.com/user-attachments/assets/f02b06f8-839e-44a7-83b1-28100ec996d4)
+
 
 
 ```json
